@@ -37,6 +37,8 @@ public interface BoardDao {
     int searchResultCnt(SearchCondition sc) throws Exception // T selectOne(String statement, Object parameter)
     ;
 
+    int updateCommentCnt(Integer bno, int cnt) throws Exception;
+
     List<BoardDto> searchSelectPage(SearchCondition sc) throws Exception // List<E> selectList(String statement, Object parameter)
     ;
 }
